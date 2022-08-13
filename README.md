@@ -13,6 +13,7 @@ V.A. Medical Center, Long Beach and Cleveland Clinic Foundation:Robert Detrano, 
 
 ### 8. Value Distribution
 #### Gaussian/Normal
+#### Uniform
 All values with the same or similar frequency. Usually represents a problem.
 #### Skewed/Unbalanced
 A small subset have high values
