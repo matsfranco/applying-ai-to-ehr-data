@@ -91,6 +91,10 @@ uniform_dist = np.random.uniform(-1,0,1000)
 uniform_ax = sns.displot(uniform_dist, kde=False )
 #plt.show()
 
+## Test with trestbps
+processed_cleveland_df['trestbps'].hist()
+plt.show()
+
 ############################
 # SCALING & MISSING VALUES #
 ############################
