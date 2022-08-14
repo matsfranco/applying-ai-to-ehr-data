@@ -106,3 +106,4 @@ Generally focusing in first two categories
 
 #### 2.9 and 2.10
 Exercises
+
