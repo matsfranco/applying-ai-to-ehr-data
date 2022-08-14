@@ -64,9 +64,3 @@ Prioritization of Diagnosis Codes:
  - Primary Diagnosis: most resource intensive diagnosis code;
  - Princial Diagnosis: that condition established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care;
  - Secondary Diagnosis: other diagnoses codes;
-
-
-
-## File descriptions
-### dataset-schema-analysis.py
-Some examples of analysis on a dataset to understand properties such as value distributions, missing values, outliers, cardinality and demographic analysis using Numpy, Pandas and Matplotlib
