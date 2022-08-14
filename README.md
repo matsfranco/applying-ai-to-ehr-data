@@ -35,8 +35,8 @@ Cardinality is the number of unique values that a feature has aind is relevant t
 ### 2. EHR Code Sets
 #### 2.1 Code Sets Overview
 
-Diagnose codes: IDC10-CM
-Procedure Codes: IDC10-PCS, CPT, HCPCS
+Diagnose codes: ICD10-CM
+Procedure Codes: ICD10-PCS, CPT, HCPCS
 Medication Codes: NDC Codes, RXNorm
 Grouping/Categorizing: CCS
 
@@ -45,11 +45,11 @@ Medical Encounter: interaction between a patient and healthcare provider(s) to p
 
 #### 2.3 Diagnosis Codes Part 1
 Diagnosis is a key piece of information that connects so much of the encounter experience together.
-IDC10: International Classification of Deseases 10
-IDC10-CM: International Classification of Deseases 10 - Clinical Modification. Medical claims, disease epidemic and mortality tracking
-Changing IDC9 (XXX.XX) -> IDC10 (XXX.XXX X).
+ICD10: International Classification of Deseases 10
+ICD10-CM: International Classification of Deseases 10 - Clinical Modification. Medical claims, disease epidemic and mortality tracking
+Changing ICD9 (XXX.XX) -> ICD10 (XXX.XXX X).
 
-IDC10-CM format
+ICD10-CM format
 
 AAA.BBB C
 A - Category of the diagnosis. 21 different categories
@@ -64,3 +64,45 @@ Prioritization of Diagnosis Codes:
  - Primary Diagnosis: most resource intensive diagnosis code;
  - Princial Diagnosis: that condition established after study to be chiefly responsible for occasioning the admission of the patient to the hospital for care;
  - Secondary Diagnosis: other diagnoses codes;
+
+#### 2.8 Procedure Codes
+Categorization of the medical codes during an encounter
+- ICD-10-PCS (Procedure Code System) [Reference] (https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2014-pcs-procedure-coding-system.pdf)
+Only for Inpatient;
+Focus on medical and surgical;
+- Current Procedural Terminology (CPT) [Reference] (https://www.aapc.com/resources/medical-coding/cpt.aspx)
+Focus in Outpatient but applicable to physician visits in ambulatory settings;
+Focus on professional services by physician;
+- Healthcare Common Procedure Coding System (HCPCS) [Reference] (https://en.wikipedia.org/wiki/Healthcare_Common_Procedure_Coding_System)
+Inpatient and Outpatient;
+Three levels: L1 is the CPT codes, L2 Non-physician services and L3 Medicare/Medicadin related
+
+The ICD10-PCS Codes
+- 7 alphanumeric characters
+- 1st character is the Section
+- Subsequent characters relate to the Section and give: Body System, Body Part, Approach, Device used for a procedure
+
+Example: 027004Z
+- 0 = Medical
+- 2 = Heart and Great Vessels
+- 7 = Dilatation
+- 0 = Coronay Artery, One Site
+- 0 = Open approach
+- 4 = Drug-eluting Intraluminal Device
+- Z = No Qualifier
+
+The CPT Codes 
+- Up to 5 numbers
+- 3 Categories: 
+    - Category 1: Billable Codes
+    - Category 2:
+        - Five digits ending in F
+        - Non-billable
+        - Performance measure focused on physicals and patient history
+    - Category 3:
+        - Services and procedures using emerging technology
+
+Generally focusing in first two categories
+
+#### 2.9 and 2.10
+Exercises
