@@ -68,14 +68,14 @@ Prioritization of Diagnosis Codes:
 #### 2.8 Procedure Codes
 Categorization of the medical codes during an encounter
 - ICD-10-PCS (Procedure Code System) [Reference](https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2014-pcs-procedure-coding-system.pdf)
-Only for Inpatient;
+    - Only for Inpatient;
 Focus on medical and surgical;
 - Current Procedural Terminology (CPT) [Reference](https://www.aapc.com/resources/medical-coding/cpt.aspx)
-Focus in Outpatient but applicable to physician visits in ambulatory settings;
-Focus on professional services by physician;
+    - Focus in Outpatient but applicable to physician visits in ambulatory settings;
+    - Focus on professional services by physician;
 - Healthcare Common Procedure Coding System (HCPCS) [Reference](https://en.wikipedia.org/wiki/Healthcare_Common_Procedure_Coding_System)
-Inpatient and Outpatient;
-Three levels: L1 is the CPT codes, L2 Non-physician services and L3 Medicare/Medicadin related
+    - Inpatient and Outpatient;
+    - Three levels: L1 is the CPT codes, L2 Non-physician services and L3 Medicare/Medicadin related
 
 The ICD10-PCS Codes
 - 7 alphanumeric characters
@@ -127,4 +127,37 @@ Crosswalk: connection betwwen two different code sets or versions of drugs in th
 NDC codes can be connected to HCPCS codes.
 A common challenge with NDC is to group codes by common types of drugs.
 
+NXNorm [Reference](https://www.nlm.nih.gov/research/umls/rxnorm/overview.html)
+Normalized naming system to solve NDC problems. 
 
+#### 2.12 Grouping/Categorizing Systems
+
+Clinical Cassifications Software (CCS)
+Created to meaningful categorize ICD10 PCS codes. Maps diagnosis or procedure codes from ICD code sets.
+- Single-Level Categories
+    - Mutually exclusive categories;
+    - 285 categories for diagnoses
+    - 231 categories for procedures
+    - Examples:
+        - Operations on the cardiovascular system are codes 43-63
+        - Heart valve procedure is code 43
+- Multi-Level Categories
+    - Helpful for more detailed analysis and more granular level grouping. 
+    - 4 level for diagnosis codes and 3 levels for procedures
+    - Example:
+        - 7.1.2.1 = Hypertensive heart and/or renal disease
+
+- CCS ICD10-PCS Category Mapping File
+    - CCS presents and overview, description, guidance and downloading information such as the [CCS ICD10-PCS Category Mapping File in csv](https://www.hcup-us.ahrq.gov/toolssoftware/ccs10/ccs10.jsp#download)
+        - .csv is the CCS IDC10-PCS Category Mapping File
+        - .sas is an ASCII file to be used in Statistical Analysis Software (SAS)
+        - .pdf is an guide that explains how to download and apply the CCS to ICD10-PCS
+    - Mapping has 8 columns
+        - ICD-10-PCS CODE: Procedure Code
+        - CCS CATEGORY
+        - ICD-10-PCS CODE DESCRIPTION
+        - CCS CATEGORY DESCRIPTION
+        - MULTI CCS LVL 1: Multi-level 1 Category 
+        - MULTI CCS LVL 1 LABEL: Multi-level 1 Category Description 
+        - MULTI CCS LVL 2: Multi-level 2 Category 
+        - MULTI CCS LVL 2 LABEL: Multi-level 2 Category Description  
