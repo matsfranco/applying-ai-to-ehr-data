@@ -67,13 +67,13 @@ Prioritization of Diagnosis Codes:
 
 #### 2.8 Procedure Codes
 Categorization of the medical codes during an encounter
-- ICD-10-PCS (Procedure Code System) [Reference] (https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2014-pcs-procedure-coding-system.pdf)
+- ICD-10-PCS (Procedure Code System) [Reference](https://www.cms.gov/Medicare/Coding/ICD10/Downloads/2014-pcs-procedure-coding-system.pdf)
 Only for Inpatient;
 Focus on medical and surgical;
-- Current Procedural Terminology (CPT) [Reference] (https://www.aapc.com/resources/medical-coding/cpt.aspx)
+- Current Procedural Terminology (CPT) [Reference](https://www.aapc.com/resources/medical-coding/cpt.aspx)
 Focus in Outpatient but applicable to physician visits in ambulatory settings;
 Focus on professional services by physician;
-- Healthcare Common Procedure Coding System (HCPCS) [Reference] (https://en.wikipedia.org/wiki/Healthcare_Common_Procedure_Coding_System)
+- Healthcare Common Procedure Coding System (HCPCS) [Reference](https://en.wikipedia.org/wiki/Healthcare_Common_Procedure_Coding_System)
 Inpatient and Outpatient;
 Three levels: L1 is the CPT codes, L2 Non-physician services and L3 Medicare/Medicadin related
 
@@ -106,4 +106,25 @@ Generally focusing in first two categories
 
 #### 2.9 and 2.10
 Exercises
+
+#### 2.11 Medication Codes
+
+National Drug Code (NDC), maintained by FDA [Reference](https://ndclist.com/)
+
+NDC Structure
+- 10 or 11 digits
+- Three parts
+    - Labeler: Drug Manufacturer;
+    - Product Code: drug details;
+    - Package Code: form and size of medication;
+
+Example: 50242-917-01
+- 50242 = Genentech, Inc
+- 917 = Non-proprietary name and formulation: ATEZOLIZUMAB 1200 mg/20mL
+- 01 = 1 vial, single-use in 1 carton: 14 ml in 1 vial, single-use of Tecentriq
+
+Crosswalk: connection betwwen two different code sets or versions of drugs in the same code set
+NDC codes can be connected to HCPCS codes.
+A common challenge with NDC is to group codes by common types of drugs.
+
 
